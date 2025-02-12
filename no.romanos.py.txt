@@ -1,0 +1,16 @@
+numero = int(input("Ingrese un numero 1-9: "))
+resultado = ''
+
+if 1 <=numero <= 3:
+    resultado = numero * 'I'
+elif 5 <= numero < 9:
+    resultado = 'V' + (numero - 5) * 'I'
+elif numero == 4:
+    resultado = 'IV'
+elif numero == 9:
+    resultado = 'IX'
+else:
+    resultado = "su numero esta fuera del rango"
+
+print(resultado)
+
