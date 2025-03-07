@@ -1,0 +1,72 @@
+EJERCICIO 1
+texto = "Python es un lenguaje poderoso"
+palabra = texto.split()
+p1 = palabra[0]
+p2 = palabra[-1]
+
+print(p1,p2)
+
+
+EJERCICIO 2
+texto = "Saludos     desde    la    luna"
+palabra = texto.split()
+palabra2 = " ".join(palabra)
+print(palabra)
+print(palabra2)
+
+EJERCICIO 3
+texto = input("Ingrese su correo: ")
+resultado = texto.split("@")
+dominio = resultado[1]
+print(dominio)
+
+
+EJERCICIO 4
+texto = input("Ingrese el nombre de su archivo: ") 
+resultado = texto.endswith(".pdf")
+print(resultado)
+
+
+EJERCICIO 5
+texto = input("Ingrese su oracion: ")
+resultado = texto.split()
+resultado2 = " ".join(resultado[::-1])
+print(resultado2)
+
+
+Ejercicio 6
+palabra = input("Ingrese qué desea saber: ")
+palabra2 = palabra.split()
+print(palabra2)
+
+poemas = [
+    "Podrá nublarse el sol eternamente; Podrá secarse en un instante el mar; Podrá romperse el eje de la tierra Como un débil cristal.",
+    "Caminante, son tus huellas el camino y nada más; Caminante, no hay camino, se hace camino al andar.",
+    "Puedo escribir los versos más tristes esta noche. Escribir, por ejemplo: La noche está estrellada, y tiritan, azules, los astros, a lo lejos.",
+    "Cultivo una rosa blanca en julio como en enero para el amigo sincero que me da su mano franca.",
+    "Si el hombre pudiera decir lo que ama, si el hombre pudiera levantar su amor por el cielo como una nube en la luz.",
+    "Te vi un día en la plaza, y el sol brillaba en tu pelo, como un rayo de oro danzando en el viento.",
+    "En la sombra de la tarde, donde el río besa la orilla, dejé mi alma flotando, entre susurros y brisa.",
+    "El alba despierta callada, como un sueño en la montaña, trayendo promesas nuevas en su aliento de esperanza."
+]
+
+cantos = [
+    "Eres como la noche, callada y constelada. Tu silencio es de estrella, tan lejano y sencillo. Me gustas cuando callas porque estás como ausente. Distante y dolorosa como si hubieras muerto.",
+    "Olas gigantes que os rompéis bramando en las playas desiertas y remotas, envuelto entre las sábanas de espuma, llevadme con vosotras.",
+    "El mar sus millares de olas mece divino. Escucha, niña: en ellas va un ritmo cadencioso de antigua música apenas ya audible.",
+    "Como la cigarra después de un año bajo la tierra, igual que el sobreviviente que vuelve de la guerra.",
+    "Déjame que te hable también con tu silencio claro como una lámpara, simple como un anillo.",
+    "Sobre la cumbre del monte, donde el águila hace su nido, el viento canta historias que solo el eco ha oído.",
+    "Bajo la luna plateada, en la orilla de la mar, los suspiros de las olas me invitan a recordar.",
+    "En la voz de un viejo trovador, donde el alma aún resuena, viven notas de un canto eterno que la vida siempre llena."
+]
+
+if "poema" in palabra2:
+    for poema in poemas:
+        print(poema)
+        print()
+
+if "canto" in palabra2:
+    for canto in cantos:
+        print(canto)
+        print()
